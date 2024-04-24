@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:500,700italic,400,700");
+
+* {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.bar-shadow {
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .2);
+}
+
+.topbar-title {
+  color: #000000 !important;
+  font-size: 23px;
+}
+
+.divider {
+  border: 1px solid #b0b0b037;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-button {
+  color: black !important;
+  font-size: 16px;
+}
+
+.page-card {
+  margin-top: 20px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #0000002f;
+  box-shadow: 1px 3.5px 5px -4px rgba(0, 0, 0, .3);
+}
+
+.title-header {
+  padding-bottom: 7px;
+}
+
+.options-dropdown {
+  height: 35px;
+  border-radius: 7px;
+  box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, .3);
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.options-dropdown:hover {
+  box-shadow: 2px 3px 4px -2px rgba(0, 0, 0, .3);
+}
+
+.btn {
+  text-align: center;
+  line-height: 0%;
+  height: 35px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px -3px rgba(0, 0, 0, .3);
+}
+
+.btn:hover {
+  box-shadow: 1px 3px 4px -3px rgba(0, 0, 0, .5);
+  transform: scale(1.02);
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.btn:active {
+  box-shadow: 0;
+  transform: scaleX(0.99);
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.btn-section {
+  padding: 10px;
+}
+
+.weapon-icon {
+  width: 35px;
+  height: auto;
+}
