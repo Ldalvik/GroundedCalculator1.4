@@ -8,6 +8,10 @@ html {
   overflow-y: scroll;
 }
 
+body {
+  background-color: #1f1f1f;
+}
+
 h1,
 h2,
 h3,
@@ -22,9 +26,11 @@ h6 {
   box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .2);
 }
 
+
 .topbar-title {
-  color: #000000 !important;
-  font-size: 23px;
+  color: #1f1f1f !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 
 .divider {
@@ -39,12 +45,13 @@ h6 {
 }
 
 .page-card {
-  margin-top: 20px;
+  background-color: #3e3e3e;
   margin: 10px;
+  margin-top: 20px;
   padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #0000002f;
-  box-shadow: 1px 3.5px 5px -4px rgba(0, 0, 0, .3);
+  border-radius: 20px;
+  border: 1px solid #ffffff06;
+  box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, .4);
 }
 
 .title-header {
@@ -52,17 +59,28 @@ h6 {
 }
 
 .options-dropdown {
+  color: white;
+  background-color: #2b2b2b;
   height: 35px;
   border-radius: 7px;
-  box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, .3);
+  border: 0px;
+  box-shadow: 3px 2px 4px -3px rgba(0, 0, 0, .4);
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+
+  &:focus {
+    background-color: #2b2b2b;
+  }
+}
+
+option {
+  background-color: #2b2b2b;
 }
 
 .options-dropdown:hover {
-  box-shadow: 2px 3px 4px -2px rgba(0, 0, 0, .3);
+  box-shadow: 2px 4px 4px -3px rgba(0, 0, 0, .6);
 }
 
 .btn {
@@ -99,4 +117,13 @@ h6 {
 .weapon-icon {
   width: 35px;
   height: auto;
+}
+
+table {
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
 }
