@@ -44,7 +44,7 @@ const HomePage = () => {
                     <td>{weapon.bestUpgrade}</td>
                     <td>{weapon.damagePerSecond.toFixed(1)}</td>
                     {/* <td>{weapon.resMulti.toFixed(5)}</td> */}
-                    {/* <td>{weapon.timeToKill.toFixed(1)}</td> */}
+                    <td>{weapon.timeToKill.toFixed(1)}</td>
                     <td>{weapon.staminaToKill.toFixed(1)}</td>
                     <td>{Math.ceil(weapon.hitsToKill)}</td>
                     <td>{weapon.damageToStaminaRatio.toFixed(2)}</td>
@@ -67,12 +67,13 @@ const HomePage = () => {
     return (
         <div className="grid-container">
             <div className="grid-x grid-padding-x grid-padding-y align-center">
-                <div className="small-12 medium-12 large-12">
+                <div className="small-10 medium-10 large-10">
                     <div className="card page-card">
                         <div className="card-section">
 
                             <h2 className="title-header text-center">Grounded Calculator</h2>
                             <p className="text-center">Created by Root, datamining by samjviana, SeanP, and blahable.</p>
+                            <p className="text-center"><small>Numbers may be inaccurate until confirmation of the new 1.4 changes. Unfinished as of Apr. 24</small></p>
                             <div className="divider" />
 
                             <label className="float-left filters-text">Weapon Level</label>
@@ -99,20 +100,21 @@ const HomePage = () => {
                                     <option key={creature} value={creature}>{creature}</option>
                                 ))}
                             </select>
+                            <div className="divider" />
 
                             <div className="grid-x align-center">
                                 <table className="calculator-table">
                                     <thead>
                                         <tr>
-                                            <th width="50"></th>
+                                            <th width="50">Icon</th>
                                             <th width="150">Name</th>
                                             <th width="120">Best Upgrade</th>
                                             <th width="70">DPS</th>
                                             {/* <th>Res Multi</th> */}
-                                            {/* <th width="70">TTK</th> */}
+                                            <th width="70">TTK</th>
                                             <th width="70">Stamina TK</th>
                                             <th width="70">Hits TK</th>
-                                            <th width="70">Damage/Stamina ratio</th>
+                                            <th width="70">Dmg/Stm ratio</th>
                                         </tr>
                                     </thead>
                                     <tbody>
